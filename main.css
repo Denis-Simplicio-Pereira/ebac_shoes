@@ -41,6 +41,8 @@ header nav li a {
 }
 
 .sobre a img {
+    width: 400px;
+    height: 350px;
     margin-right: 25px;
 }
 
@@ -105,4 +107,80 @@ button {
 button:hover {
     background-color: #a19f9f;
     color: green;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+    .container {
+        max-width: 90%;
+    }
+
+    header nav li {
+        display: block;
+    }
+
+    #section_um article a {
+        display: block;
+        margin-top: 40px;
+    }
+
+    .sobre a img {
+        width: 730px;
+        height: 390px;
+        margin-right: 0;
+    }
+
+    .conteudo_sobre h2 {
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+
+    ul {
+        flex-wrap:wrap;
+    }
+
+    section ul li {
+        max-width: 50%;
+        padding-top: 40px;
+        list-style: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        margin: 0 auto;
+        max-width: 80%;
+    }
+
+    header nav li {
+        display: flex;
+        max-width: 100%;
+    }
+
+    header h1 {
+        font-style: italic;
+    }
+
+    #section_um article a {
+        display: block;
+        max-width: 100%;
+        margin-top: 40px;
+    }
+
+    .sobre a img {
+        width: 100%;
+        height: 300px;
+        margin-right: 0;
+        padding-bottom: 20px;
+    }
+
+    ul {
+        display: block;
+    }
+
+    section ul li {
+        max-width: 100%;
+        padding-top: 40px;
+        list-style: none;
+    }
 }
